@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 11400014}
   - component: {fileID: 11400010}
   - component: {fileID: 11400004}
+  - component: {fileID: 2867480003187646928}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -338,3 +339,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetBelowThisY: -100
   fadeInOnReset: 1
+--- !u!114 &2867480003187646928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c66c24375f07274f85db43cb79ce2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundDisplay: {fileID: 0}
+  inventory: {fileID: 0}
+  soundSprite: []
