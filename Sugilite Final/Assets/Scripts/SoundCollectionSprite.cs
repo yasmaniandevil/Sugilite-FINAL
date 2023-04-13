@@ -108,7 +108,7 @@ public class SoundCollectionSprite : MonoBehaviour
         
             for (int i = 0; i < soundSprite.Length; i++)
             {
-                if (soundSprite[i].sprite == null)
+                if (soundSprite[i].sprite == null) //this is where sprite is placed.
                 {
                     soundSprite[i].sprite = soundIcon;
                     return;
