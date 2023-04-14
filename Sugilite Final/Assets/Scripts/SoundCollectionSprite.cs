@@ -45,7 +45,6 @@ public class SoundCollectionSprite : MonoBehaviour
                     inventoryUp = true; //turn bool to true
                     currentSoundCheck = hit.collider.gameObject; //and currentSoundCheck will equal object hit
                     
-                    
                 }
                 else //if sound already assigned then
                 {
@@ -55,14 +54,15 @@ public class SoundCollectionSprite : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && inventoryUp == false) //if enter is pressed when textBox bool is true
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !inventoryUp) //if enter is pressed when textBox bool is true
         {
             inventory.gameObject.SetActive(true);
             inventoryUp = true;
             //RemoveSound(currentSoundCheck); //call Remove sound function with currentSoundCheck object
+            return;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && inventoryUp == true)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && inventoryUp)
         {
             inventory.gameObject.SetActive(false);
             inventoryUp = false;
